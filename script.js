@@ -25,7 +25,6 @@ const validFormats = [
 function isValidNumber(input) {
   return validFormats.some((regex) => regex.test(input));
 }
-console.log(isValidNumber("1 456 789 4444"))
 
 $checkButton.addEventListener("click", () => {
   if (!$input.value) {
